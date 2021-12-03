@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                ls -lh $(pwd)
+                sh 'ls -lh $(pwd)'
             }
         }
     }
